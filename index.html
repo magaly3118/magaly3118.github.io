@@ -1,0 +1,181 @@
+<!--
+    Author          Magaly Camacho
+    Date Created    11/07/2024
+    Description     Personal Website
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Head -->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Magaly Camacho</title>
+        <meta name="description" content="Magaly Camacho's Personal Website">
+        <meta name="keywords" content="Personal">
+        <meta name="author" content="Magaly Camacho">
+
+        <link rel="stylesheet" type="text/css" href="index.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    </head>
+
+    <!-- Body -->
+    <body>
+        <!--Intro-->
+        <header>
+            <div class="header-content">
+                <h1 class="hello">Hi! I'm Magaly</h1>
+                
+                <p class="hello-continued">I'm a senior studying Computer Science at the University of Kansas</p>
+            </div>
+            
+            <hr class="hr-thick">
+        </header>
+
+        <!-- Main Content -->
+        <main class="content">
+            <!--Experience-->
+            <section>
+                <h2 class="section-name">Experience</h2>
+
+                <div class="blocks">
+                    <div class="block">
+                        <h3 class="block-name">Maritz</h3>
+    
+                        <div class="block-info">
+                            <p class="left-info">Application Developer Intern</p>
+                            <p class="right-info">Summer 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="hr-thin">
+
+            <!--Projects-->
+            <section>
+                <h2 class="section-name">Projects</h2>
+                
+                <div class="blocks">
+                    <!--Halloween on Maple Street-->
+                    <a href="https://github.com/manvirk21/Halloween-on-Maple-Street" class="block project-link" target="_blank_">
+                        <h3 class="project-name block-name">Halloween on Maple Street</h3>
+
+                        <div class="project-info block-info">
+                            <p class="project-description left-info">A puzzle adventure game</p>
+                            <p class="project-stack right-info">Godot • GDScript • Git</p>
+                        </div>
+                    </a>
+
+                    <!--BusyBee-->
+                    <a href="https://github.com/MatthewMcManness/EECS581_Project3" class="block project-link" target="_blank_">
+                        <h3 class="project-name block-name">BusyBee</h3>
+
+                        <div class="project-info block-info">
+                            <p class="project-description left-info">A 2-in-1 calendar and to-do list application</p>
+                            <p class="project-stack right-info">Python • SQLAlchemy • Kivy</p>
+                        </div>
+                    </a>
+
+                    <!--Battleship 2-->
+                    <a href="https://github.com/manvirk21/EECS581_Project2" class="block project-link" target="_blank_">
+                        <h3 class="project-name block-name">Battleship</h3>
+
+                        <div class="project-info block-info">
+                            <p class="project-description left-info">Like the game</p>
+                            <p class="project-stack right-info">Python • Pygame</p>
+                        </div>
+                    </a>
+
+                    <!--Serpentwine-->
+                    <a href="https://github.com/magaly3118/Serpentwine" class="block project-link" target="_blank_">
+                        <h3 class="project-name block-name">Serpentwine</h3>
+
+                        <div class="project-info block-info">
+                            <p class="project-description left-info">Snake but with a scarf-y twist</p>
+                            <p class="project-stack right-info">Godot • GDScript • Git</p>
+                        </div>
+                    </a>
+
+                    <!--CLI Arithmetic Expression Evaluator-->
+                    <a href="https://github.com/hrsmith1/Arithmetic-Expression-Evaluator" class="block project-link" target="_blank_">
+                        <h3 class="project-name block-name">CLI Arithmetic Expression Evaluator</h3>
+
+                        <div class="project-info block-info">
+                            <p class="project-description left-info">Basically a calculator</p>
+                            <p class="project-stack right-info">C++ • Make</p>
+                        </div>
+                    </a>
+
+                    <!--Hydrate-->
+                    <a href="https://github.com/hrsmith1/watertracker/tree/main/HYDRATE" class="block project-link" target="_blank_">
+                        <h3 class="project-name block-name">Hydrate</h3>
+
+                        <div class="project-info block-info">
+                            <p class="project-description left-info">A water consumption tracker</p>
+                            <p class="project-stack right-info">HTML • CSS • Python • SQLite • Flask</p>
+                        </div>
+                    </a>
+
+                    <!--Hydrate-->
+                    <a href="https://github.com/magaly3118/magaly3118.github.io" class="block project-link" target="_blank_">
+                        <h3 class="project-name block-name">Personal Website</h3>
+
+                        <div class="project-info block-info">
+                            <p class="project-description left-info">This website</p>
+                            <p class="project-stack right-info">HTML • CSS • JavaScript</p>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </main>
+        
+        <hr class="hr-thick">
+
+        <!-- Footer -->
+        <footer class="content">
+            <!--Social Media Links-->
+            <div class="social-media">
+                <h2 class="social-title">Get in touch!</h2>
+                <a class="social-icon" href="mailto:magaly.camacho3118@gmail.com" target="_blank">
+                    <img src="./images/email.png" alt="Email">
+                </a>  
+                <a class="social-icon" href="https://www.linkedin.com/in/magaly-camacho" target="_blank">
+                    <img src="./images/linkedin.png" alt="LinkedIn">
+                </a>  
+                <a class="social-icon" href="https://github.com/magaly3118" target="_blank">
+                    <img src="./images/github.png" alt="GitHub"> 
+                </a>
+            </div>
+        </footer>
+
+        <script>
+            const projectLinks = document.querySelectorAll('.project-link');
+            const greyed_out = "greyed-out";
+            const greyed_out_border = "greyed-out-border";
+            const project_name = ".project-name";
+
+            projectLinks.forEach(link => {
+                link.addEventListener("mouseenter", () => {
+                    projectLinks.forEach(otherLink => {
+                        if (otherLink !== link) {
+                            otherLink.querySelector(project_name).classList.add(greyed_out);
+                            otherLink.classList.add(greyed_out_border);
+                        }
+                    });
+                });
+
+                link.addEventListener("mouseleave", () => {
+                    projectLinks.forEach(otherLink => {
+                        otherLink.querySelector(project_name).classList.remove(greyed_out);
+                        otherLink.classList.remove(greyed_out_border);
+                    });
+                });
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,183 @@
+/*
+    Author          Magaly Camacho
+    Date Created    11/12/2024
+    Description     Style sheet for personal website
+*/
+
+/* Variables */
+:root {
+    /* Colors */
+    --accent-color: #289196;
+    --almost-white: #e4e4e4;
+    --light-grey: #b2afaf;
+    
+    /* Settings */
+    --hover-color-transition: color 0.2s ease;
+    --default-space: 40px;
+    --block-default-space-big: 15px;
+    --block-default-space-med: 10px;
+    --block-default-space-small: 5px;
+    --thin-line: 1px;
+}
+
+/* Bases */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+}
+
+h2 {
+    margin: var(--default-space) 0 0;
+    padding: 0;
+}
+
+h3 {
+    margin: var(--default-space) 0 0;
+    padding: 0;
+}
+
+/* Horizontal Lines */
+.hr-thick {
+    background-color: var(--accent-color);
+    margin-top: var(--default-space);
+    height: 3px;
+    border: none;
+}
+
+.hr-thin {
+    background-color: var(--accent-color);
+    margin-top: var(--default-space);
+    height: var(--thin-line);
+    border: none;
+    max-width: 700px;
+}
+
+/* Header */
+header {
+    background-color: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.hello {
+    color: var(--accent-color);
+    padding: var(--default-space) var(--default-space) 0;
+    margin: 0;
+}
+
+.hello-continued {
+    color: white; 
+    font-size: 17px;
+    padding: 0 var(--default-space);
+}
+
+/* Main Content */
+.content {
+    margin: var(--default-space);
+    background-color: black;
+    color: white;
+}
+
+/* Block Format */
+.blocks {
+    padding: 0;
+    margin: var(--block-default-space-big) 0;
+}
+
+.block {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    border: var(--thin-line) solid white;
+    padding: var(--block-default-space-big); 
+    margin: var(--block-default-space-big) auto;
+    border-radius: var(--block-default-space-big); 
+    box-sizing: border-box;
+    max-width: 700px;
+}
+
+.block-name {
+    color: var(--almost-white);
+    transition: var(--hover-color-transition);
+    margin: 0 0 var(--block-default-space-small);
+}
+
+.block-info {
+    color: var(--light-grey);
+    transition: var(--hover-color-transition);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.block-info > * {
+    margin: var(--block-default-space-small) var(--default-space-small) 0 0;
+}
+
+.left-info {
+    text-align: left;
+}
+
+.right-info {
+    text-align: right;
+}
+
+@media (max-width: 700px) {
+    .block-info {
+        justify-content: center;
+    }
+
+    .left-info, .right-info {
+        flex: none;
+        text-align: center;
+        width: 100%;
+    }
+}
+
+/* Projects Hover Formatting */
+.greyed-out {
+    color: var(--light-grey);
+}
+
+.greyed-out-border {
+    border: var(--thin-line) solid var(--light-grey);
+}
+
+.project-link:hover {
+    border: var(--thin-line) dashed var(--accent-color);
+}
+
+.project-link:hover .project-name {
+    color: var(--accent-color);
+}
+
+.project-link:hover .project-info {
+    color: var(--almost-white);
+}
+
+/* Footer */
+.social-title {
+    margin-bottom: 15px
+}
+
+.social-icon {
+    margin-right: 10px;
+    text-decoration: none;
+}
+
+.social-icon img {
+    height: 35px; 
+    width: auto;
+    transition: transform 0.2s ease; 
+}
+
+.social-icon img:hover {
+    transform: scale(1.1); 
+}

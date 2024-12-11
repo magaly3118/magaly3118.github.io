@@ -57,7 +57,6 @@ h3 {
 
 /* Header */
 header {
-    background-color: black;
     top: 0;
     left: 0;
     width: 100%;
@@ -78,7 +77,6 @@ header {
 /* Main Content */
 .content {
     margin: var(--default-space);
-    background-color: black;
     color: white;
 }
 
@@ -178,6 +176,10 @@ header {
     transition: transform 0.2s ease; 
 }
 
-.social-icon img:hover {
+.social-icon svg path {
+    fill: white;
+}
+
+.social-icon svg:hover {
     transform: scale(1.1); 
 }
